@@ -1,0 +1,180 @@
+/*Font Style*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2? family=Amiri&display=swap');
+
+              /*General rule*/
+body {
+  background-color: rgb(238, 200, 163); 
+  font-family: 'Amiri display';
+  font-size: 1.6em;
+  color: black;
+  margin: 0;
+}
+h1 {
+  font-family: 'Great Vibes display';
+  font-weight: lighter;
+  color: rgb(104, 5, 5);
+  margin: 0;
+}
+h2 {
+  color: orangered;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color:rgb(233, 126, 50);
+}
+li{
+  list-style-type: none;
+}
+
+              /*Header and footer of all pages*/
+header {
+  background-image: url('../img/principal.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+header .foreground {
+  background-color: rgba(220, 46, 3, 0.8);
+  padding: 40px 33px 35px 33px;
+  box-shadow: rgba(30, 30, 40, 0.4) 0px 5px 4px;
+}
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  box-sizing: border-box;
+}
+.start nav {
+  background-color: rgb(220, 46, 3, 0.9);
+  font-size: 130%;
+  width: 75%;
+  height: 50%;
+  position: fixed;
+  top: 0;
+  left: -85%;
+  box-shadow: rgba(30, 30, 40, 0.5) 1px 1px 5px;
+  border-end-end-radius: 50%;
+  transition: 1s left ease;
+  z-index: 1;
+}
+
+.show-menu {
+  left: 0 !important;
+}
+
+.start nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+.start nav ul li {
+  padding: 15px 30px;
+  text-align:center;
+}
+.start nav ul li a {
+  color:  rgb(89, 10, 10);
+  font-weight: bolder;
+}
+.icon-hamburger {
+  font-size: 30px;
+  color: black;
+}
+
+footer {
+  background-color: rgb(49, 20, 9);
+  color:rgb(255, 255, 255);
+  align-self: end;
+}
+footer p{
+  font-size: 0.7em;
+  font-weight:lighter;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+/*Big Screen*/
+@media screen and (min-width: 600px) {
+.start nav {
+  width: 100%;
+  background-color: transparent;
+  position: static;
+  box-shadow: none;
+}
+.start nav ul {
+  flex-direction: row;
+}
+.start nav ul li {
+  padding: 0;
+}
+.start nav ul li a {
+  color:  rgb(89, 10, 10);
+}
+.icon-hamburger {
+  display: none;
+}
+}
+
+              /* Content section */
+              /* Principal */
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.img img{
+  position: relative;
+  bottom: -50px;
+  width: 300px;
+  border-radius: 30%;
+  box-shadow: rgba(30, 30, 40, 0.5) 1px 1px 5px;
+}
+@media screen and (max-width: 600px){
+.img img{
+  width: 180px;
+}
+}
+.content {
+  background-color: rgb(223, 173, 123);
+  text-align: center;
+  padding: 20px;
+  margin: 10px 20px 0px 20px;
+}
+.content p {
+  text-align: justify;
+}
+
+
+              /* Content section */
+              /* Contato */
+.body {
+  background-color: rgb(223, 173, 123);
+  margin: 10px 20px 0px 20px;
+  padding: 10px 20px;
+}
+.body h2 {
+  text-align: center;
+}
+.block-section {  
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.block-section img {
+  width: 400px;
+  height: 600px;
+}
+.block-section a {
+  overflow: scroll;
+}
+@media screen and (max-width: 600px){
+  .block-section img{
+    width: 100px;
+    height: 200px;
+  }
+  }

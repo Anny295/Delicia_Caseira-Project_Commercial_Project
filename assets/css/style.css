@@ -13,7 +13,7 @@ body {
 h1 {
   font-family: 'Great Vibes display';
   font-weight: lighter;
-  color: rgb(104, 5, 5);
+  color: white;
   margin: 0;
 }
 h2 {
@@ -76,7 +76,7 @@ header .foreground {
   text-align:center;
 }
 .start nav ul li a {
-  color:  rgb(89, 10, 10);
+  color:  white;
   font-weight: bolder;
 }
 .icon-hamburger {

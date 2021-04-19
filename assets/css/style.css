@@ -4,11 +4,16 @@
 
               /*General rule*/
 body {
-  background-color: rgb(238, 200, 163); 
+  background-color: rgb(255, 224, 193);
   font-family: 'Amiri display';
   font-size: 1.6em;
+  text-align: justify;
   color: black;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding-bottom: 139px;
   margin: 0;
+  position: relative;
 }
 h1 {
   font-family: 'Great Vibes display';
@@ -19,8 +24,14 @@ h1 {
 h2 {
   color: orangered;
 }
+h3 {
+  color: rgb(248, 94, 38);
+}
+h1, h2, h3 {text-align: center;}
 a {
   text-decoration: none;
+  color: red;  
+  font-weight:bold;
 }
 a:hover {
   color:rgb(233, 126, 50);
@@ -38,7 +49,7 @@ header {
 header .foreground {
   background-color: rgba(220, 46, 3, 0.8);
   padding: 40px 33px 35px 33px;
-  box-shadow: rgba(30, 30, 40, 0.4) 0px 5px 4px;
+  box-shadow: rgba(30, 30, 40, 0.2) 0px 5px 4px;
 }
 .start {
   display: flex;
@@ -78,16 +89,29 @@ header .foreground {
 .start nav ul li a {
   color:  white;
   font-weight: bolder;
+  padding: 10px;
 }
 .icon-hamburger {
   font-size: 30px;
   color: black;
 }
 
+
+.background-section {
+  background-color: rgb(255, 224, 193);
+  padding: 10px 20px;
+  margin: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px; 
+  margin-bottom: 0px;
+}
+
 footer {
   background-color: rgb(49, 20, 9);
   color:rgb(255, 255, 255);
+  width: 100%;
   align-self: end;
+  position: absolute;
+  bottom: 0px;
 }
 footer p{
   font-size: 0.7em;
@@ -111,7 +135,7 @@ footer p{
   padding: 0;
 }
 .start nav ul li a {
-  color:  rgb(89, 10, 10);
+  color:white;
 }
 .icon-hamburger {
   display: none;
@@ -139,10 +163,11 @@ footer p{
 }
 }
 .content {
-  background-color: rgb(223, 173, 123);
   text-align: center;
   padding: 20px;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px; 
+  margin-bottom: 0px;
 }
 .content p {
   text-align: justify;
@@ -151,12 +176,7 @@ footer p{
 
               /* Content section */
               /* Contato */
-.body {
-  background-color: rgb(223, 173, 123);
-  margin: 10px 20px 0px 20px;
-  padding: 10px 20px;
-}
-.body h2 {
+.background-section h2 {
   text-align: center;
 }
 .block-section {  
@@ -177,4 +197,25 @@ footer p{
     width: 100px;
     height: 200px;
   }
-  }
+}
+
+/* Pages menu and desc_product */
+.imag {
+  text-align: justify;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imag img{
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px;
+}
+@media screen and (max-width: 700px){
+.imag img{
+  width: 180px;
+}
+}

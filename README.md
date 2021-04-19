@@ -14,7 +14,7 @@
     Qualquer pessoa que possa realizar compras, maior de 18 anos ou menor autorizado. 
 
 ## Autor
-    Construído por Ana Luísa Sobrinho Domingos e Anny Julliane Carvalho Araújo que ficaram responsáveis, respectivamente, pela criação da Home e contato, X e Y.
+    Construído por Ana Luísa Sobrinho Domingos e Anny Julliane Carvalho Araújo que ficaram responsáveis, respectivamente, pela criação da Home e contato, Descrição de produto e Cardápio.
 
 ### Referências
     https://fonts.google.com/ - Google fonts.
